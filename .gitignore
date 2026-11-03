@@ -1,0 +1,10 @@
+node_modules/
+.next/
+backend/data/
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+.env
+.env.local
+evaluation/results/

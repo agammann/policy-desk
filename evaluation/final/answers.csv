@@ -1,0 +1,46 @@
+﻿id,question,reference_answer,expected_document,expected_page,answer,citation_count,correct_1_or_0,review_notes
+leave-01,How many annual leave days do full-time employees receive?,"20 days per calendar year, prorated for employees who join during the year.",employee-leave-policy.pdf,1,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Annual leave Full-time employees receive 20 days of paid annual leave each calendar year. Annual leave is prorated for employees who join during the year. [1]",1,1,
+leave-02,How far in advance should I request annual leave?,At least 10 business days before the first day off; manager approval is required before booking travel.,employee-leave-policy.pdf,1,"Here are the most relevant passages I found:
+
+Requesting time off Submit annual leave requests in the HR portal at least 10 business days before the first day off. Your manager must approve the request before you book travel. [1]",1,1,
+leave-03,"How many unused annual leave days can I carry over, and when must I use them?","Up to 5 days, to be used by March 31.",employee-leave-policy.pdf,1,"Here are the most relevant passages I found:
+
+Carryover Employees may carry over up to 5 unused annual leave days into the next calendar year. Carried-over days must be used by March 31. [1]",1,1,
+leave-04,How many paid sick days do employees get each year?,8 paid sick days per calendar year.,employee-leave-policy.pdf,2,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. Notify your manager as soon as practical when you cannot work due to illness. [1]",1,1,
+leave-05,How much unpaid family leave may eligible employees take?,Up to 12 weeks in a rolling 12-month period.,employee-leave-policy.pdf,2,"Here are the most relevant passages I found:
+
+Family leave Eligible employees may take up to 12 weeks of unpaid family leave in a rolling 12-month period. Contact People Operations to confirm eligibility and arrange leave. [1]",1,1,
+remote-01,How many days per week may employees work remotely?,"Up to 3 days per week with manager approval, subject to role-specific on-site coverage.",remote-work-policy.pdf,1,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Eligibility Employees may work remotely up to 3 days per week with manager approval. Roles that require on-site coverage may have different schedules. [1]",1,1,
+remote-02,What are the remote work core collaboration hours?,10:00 a.m. to 3:00 p.m. in the team's local time zone on working days.,remote-work-policy.pdf,1,"Here are the most relevant passages I found:
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. Equipment The company provides a laptop and a one-time home-office equipment allowance of up to $500. [1]",1,1,Correct complete answer; additionally includes an unrelated neighboring section.
+remote-03,What home-office allowance is available and when are receipts due?,A one-time allowance of up to $500; submit receipts within 30 days of purchase.,remote-work-policy.pdf,1,"Here are the most relevant passages I found:
+
+Equipment The company provides a laptop and a one-time home-office equipment allowance of up to $500. Submit receipts through the expense system within 30 days of purchase. [1]",1,1,
+remote-04,When must remote employees use the company VPN?,When accessing internal systems from a public network.,remote-work-policy.pdf,2,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Security Use the company VPN when accessing internal systems from a public network. Never leave a company device unattended in a public place. [1]",1,1,
+remote-05,What is required before working from another country?,"Written People Operations approval at least 30 days in advance, subject to legal, tax, and security review.",remote-work-policy.pdf,2,"Here are the most relevant passages I found:
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. Approval depends on legal, tax, and security review. [1]",1,1,
+travel-01,When does a flight need manager approval before booking?,When it costs over $800.,travel-expense-policy.pdf,1,"Here are the most relevant passages I found:
+
+Flights over $800 require manager approval before booking. Hotels The standard hotel limit is $225 per night before taxes. [1]",1,1,Correct complete answer; additionally includes an unrelated neighboring section.
+travel-02,What is the standard nightly hotel limit?,"$225 per night before taxes, with possible manager-approved exceptions.",travel-expense-policy.pdf,1,"Here are the most relevant passages I found:
+
+Hotels The standard hotel limit is $225 per night before taxes. A manager may approve a higher rate when a conference hotel or local market conditions justify it. [1]",1,1,
+travel-03,What is the meal reimbursement limit and is alcohol covered?,$65 per person per travel day including tips; alcohol is not reimbursable.,travel-expense-policy.pdf,1,"Here are the most relevant passages I found:
+
+Meals The meal reimbursement limit is $65 per person per travel day, including tips. Alcohol is not reimbursable. [1]",1,1,
+travel-04,"When must travel expense reports be submitted, and which expenses require receipts?",Within 30 calendar days after the trip ends; itemized receipts are required for every expense over $25.,travel-expense-policy.pdf,2,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Submitting expenses Submit expense reports within 30 calendar days after the trip ends. Attach an itemized receipt for every expense over $25. [1]",1,1,
+travel-05,Who pays for personal travel added to a business trip?,The employee pays; reimbursement is limited to the documented business-only itinerary cost.,travel-expense-policy.pdf,2,"Here are the most relevant passages I found:
+
+Personal travel Personal travel added to a business trip must be paid by the employee. Reimbursement is limited to the documented cost of the business-only itinerary. [1]",1,1,

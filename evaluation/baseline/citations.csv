@@ -1,0 +1,265 @@
+﻿question_id,citation_id,answer,document,page,cited_text,grounded_1_or_0,review_notes
+leave-01,1,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Annual leave Full-time employees receive 20 days of paid annual leave each calendar year. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [2]
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [3]",employee-leave-policy.pdf,1,NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Annual leave Full-time employees receive 20 days of paid annual leave each calendar year.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-01,2,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Annual leave Full-time employees receive 20 days of paid annual leave each calendar year. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [2]
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [3]",employee-leave-policy.pdf,2,NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-01,3,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Annual leave Full-time employees receive 20 days of paid annual leave each calendar year. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [2]
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [3]",remote-work-policy.pdf,1,Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-02,1,"Here are the most relevant passages I found:
+
+Annual leave is prorated for employees who join during the year. [1]
+
+Family leave Eligible employees may take up to 12 weeks of unpaid family leave in a rolling 12-month period. [2]
+
+Never leave a company device unattended in a public place. [3]",employee-leave-policy.pdf,1,Annual leave is prorated for employees who join during the year.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-02,2,"Here are the most relevant passages I found:
+
+Annual leave is prorated for employees who join during the year. [1]
+
+Family leave Eligible employees may take up to 12 weeks of unpaid family leave in a rolling 12-month period. [2]
+
+Never leave a company device unattended in a public place. [3]",employee-leave-policy.pdf,2,Family leave Eligible employees may take up to 12 weeks of unpaid family leave in a rolling 12-month period.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-02,3,"Here are the most relevant passages I found:
+
+Annual leave is prorated for employees who join during the year. [1]
+
+Family leave Eligible employees may take up to 12 weeks of unpaid family leave in a rolling 12-month period. [2]
+
+Never leave a company device unattended in a public place. [3]",remote-work-policy.pdf,2,Never leave a company device unattended in a public place.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-03,1,"Here are the most relevant passages I found:
+
+Carryover Employees may carry over up to 5 unused annual leave days into the next calendar year. [1]
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [2]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [3]",employee-leave-policy.pdf,1,Carryover Employees may carry over up to 5 unused annual leave days into the next calendar year.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-03,2,"Here are the most relevant passages I found:
+
+Carryover Employees may carry over up to 5 unused annual leave days into the next calendar year. [1]
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [2]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [3]",remote-work-policy.pdf,2,Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-03,3,"Here are the most relevant passages I found:
+
+Carryover Employees may carry over up to 5 unused annual leave days into the next calendar year. [1]
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [2]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [3]",employee-leave-policy.pdf,2,NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-04,1,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Annual leave Full-time employees receive 20 days of paid annual leave each calendar year. [2]
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [3]",employee-leave-policy.pdf,2,NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-04,2,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Annual leave Full-time employees receive 20 days of paid annual leave each calendar year. [2]
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [3]",employee-leave-policy.pdf,1,NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Annual leave Full-time employees receive 20 days of paid annual leave each calendar year.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-04,3,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Annual leave Full-time employees receive 20 days of paid annual leave each calendar year. [2]
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [3]",remote-work-policy.pdf,1,Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-05,1,"Here are the most relevant passages I found:
+
+Family leave Eligible employees may take up to 12 weeks of unpaid family leave in a rolling 12-month period. [1]
+
+Annual leave is prorated for employees who join during the year. [2]
+
+Never leave a company device unattended in a public place. [3]",employee-leave-policy.pdf,2,Family leave Eligible employees may take up to 12 weeks of unpaid family leave in a rolling 12-month period.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-05,2,"Here are the most relevant passages I found:
+
+Family leave Eligible employees may take up to 12 weeks of unpaid family leave in a rolling 12-month period. [1]
+
+Annual leave is prorated for employees who join during the year. [2]
+
+Never leave a company device unattended in a public place. [3]",employee-leave-policy.pdf,1,Annual leave is prorated for employees who join during the year.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+leave-05,3,"Here are the most relevant passages I found:
+
+Family leave Eligible employees may take up to 12 weeks of unpaid family leave in a rolling 12-month period. [1]
+
+Annual leave is prorated for employees who join during the year. [2]
+
+Never leave a company device unattended in a public place. [3]",remote-work-policy.pdf,2,Never leave a company device unattended in a public place.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-01,1,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Eligibility Employees may work remotely up to 3 days per week with manager approval. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [2]
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [3]",remote-work-policy.pdf,1,NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Eligibility Employees may work remotely up to 3 days per week with manager approval.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-01,2,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Eligibility Employees may work remotely up to 3 days per week with manager approval. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [2]
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [3]",employee-leave-policy.pdf,2,NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-01,3,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Eligibility Employees may work remotely up to 3 days per week with manager approval. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Employee Leave Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Sick leave Employees receive 8 paid sick days per calendar year. [2]
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [3]",remote-work-policy.pdf,2,Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-02,1,"Here are the most relevant passages I found:
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Security Use the company VPN when accessing internal systems from a public network. [2]",remote-work-policy.pdf,1,Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-02,2,"Here are the most relevant passages I found:
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Security Use the company VPN when accessing internal systems from a public network. [2]",remote-work-policy.pdf,2,NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Security Use the company VPN when accessing internal systems from a public network.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-03,1,"Here are the most relevant passages I found:
+
+Equipment The company provides a laptop and a one-time home-office equipment allowance of up to $500. [1]
+
+Notify your manager as soon as practical when you cannot work due to illness. [2]",remote-work-policy.pdf,1,Equipment The company provides a laptop and a one-time home-office equipment allowance of up to $500.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-03,2,"Here are the most relevant passages I found:
+
+Equipment The company provides a laptop and a one-time home-office equipment allowance of up to $500. [1]
+
+Notify your manager as soon as practical when you cannot work due to illness. [2]",employee-leave-policy.pdf,2,Notify your manager as soon as practical when you cannot work due to illness.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-04,1,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Security Use the company VPN when accessing internal systems from a public network. [1]
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [2]
+
+Carried-over days must be used by March 31. [3]",remote-work-policy.pdf,2,NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Security Use the company VPN when accessing internal systems from a public network.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-04,2,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Security Use the company VPN when accessing internal systems from a public network. [1]
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [2]
+
+Carried-over days must be used by March 31. [3]",remote-work-policy.pdf,1,Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-04,3,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Security Use the company VPN when accessing internal systems from a public network. [1]
+
+Core hours Remote employees must be available for collaboration from 10:00 a.m. to 3:00 p.m. in their team's local time zone on working days. [2]
+
+Carried-over days must be used by March 31. [3]",employee-leave-policy.pdf,1,Carried-over days must be used by March 31.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-05,1,"Here are the most relevant passages I found:
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [1]
+
+Flights over $800 require manager approval before booking. [2]
+
+Your manager must approve the request before you book travel. [3]",remote-work-policy.pdf,2,Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-05,2,"Here are the most relevant passages I found:
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [1]
+
+Flights over $800 require manager approval before booking. [2]
+
+Your manager must approve the request before you book travel. [3]",travel-expense-policy.pdf,1,Flights over $800 require manager approval before booking.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+remote-05,3,"Here are the most relevant passages I found:
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [1]
+
+Flights over $800 require manager approval before booking. [2]
+
+Your manager must approve the request before you book travel. [3]",employee-leave-policy.pdf,1,Your manager must approve the request before you book travel.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-01,1,"Here are the most relevant passages I found:
+
+Flights over $800 require manager approval before booking. [1]
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [2]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Eligibility Employees may work remotely up to 3 days per week with manager approval. [3]",travel-expense-policy.pdf,1,Flights over $800 require manager approval before booking.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-01,2,"Here are the most relevant passages I found:
+
+Flights over $800 require manager approval before booking. [1]
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [2]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Eligibility Employees may work remotely up to 3 days per week with manager approval. [3]",remote-work-policy.pdf,2,Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-01,3,"Here are the most relevant passages I found:
+
+Flights over $800 require manager approval before booking. [1]
+
+Working abroad Employees must obtain written approval from People Operations at least 30 days before working from another country. [2]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Eligibility Employees may work remotely up to 3 days per week with manager approval. [3]",remote-work-policy.pdf,1,NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Remote Work Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Eligibility Employees may work remotely up to 3 days per week with manager approval.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-02,1,"Here are the most relevant passages I found:
+
+Hotels The standard hotel limit is $225 per night before taxes. [1]",travel-expense-policy.pdf,1,Hotels The standard hotel limit is $225 per night before taxes.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-03,1,"Here are the most relevant passages I found:
+
+Meals The meal reimbursement limit is $65 per person per travel day, including tips. [1]
+
+Reimbursement is limited to the documented cost of the business-only itinerary. [2]",travel-expense-policy.pdf,1,"Meals The meal reimbursement limit is $65 per person per travel day, including tips.",1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-03,2,"Here are the most relevant passages I found:
+
+Meals The meal reimbursement limit is $65 per person per travel day, including tips. [1]
+
+Reimbursement is limited to the documented cost of the business-only itinerary. [2]",travel-expense-policy.pdf,2,Reimbursement is limited to the documented cost of the business-only itinerary.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-04,1,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Submitting expenses Submit expense reports within 30 calendar days after the trip ends. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Booking travel Book business travel through the company travel portal. [2]
+
+Submit receipts through the expense system within 30 days of purchase. [3]",travel-expense-policy.pdf,2,NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Submitting expenses Submit expense reports within 30 calendar days after the trip ends.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-04,2,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Submitting expenses Submit expense reports within 30 calendar days after the trip ends. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Booking travel Book business travel through the company travel portal. [2]
+
+Submit receipts through the expense system within 30 days of purchase. [3]",travel-expense-policy.pdf,1,NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Booking travel Book business travel through the company travel portal.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-04,3,"Here are the most relevant passages I found:
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 2 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Submitting expenses Submit expense reports within 30 calendar days after the trip ends. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Booking travel Book business travel through the company travel portal. [2]
+
+Submit receipts through the expense system within 30 days of purchase. [3]",remote-work-policy.pdf,1,Submit receipts through the expense system within 30 days of purchase.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-05,1,"Here are the most relevant passages I found:
+
+Personal travel Personal travel added to a business trip must be paid by the employee. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Booking travel Book business travel through the company travel portal. [2]
+
+Your manager must approve the request before you book travel. [3]",travel-expense-policy.pdf,2,Personal travel Personal travel added to a business trip must be paid by the employee.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-05,2,"Here are the most relevant passages I found:
+
+Personal travel Personal travel added to a business trip must be paid by the employee. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Booking travel Book business travel through the company travel portal. [2]
+
+Your manager must approve the request before you book travel. [3]",travel-expense-policy.pdf,1,NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Booking travel Book business travel through the company travel portal.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.
+travel-05,3,"Here are the most relevant passages I found:
+
+Personal travel Personal travel added to a business trip must be paid by the employee. [1]
+
+NORTHSTAR / FICTIONAL SAMPLE POLICY 1 Travel & Expense Policy PEOPLE OPERATIONS / SAMPLE DOCUMENT Booking travel Book business travel through the company travel portal. [2]
+
+Your manager must approve the request before you book travel. [3]",employee-leave-policy.pdf,1,Your manager must approve the request before you book travel.,1,Verbatim passage on cited page; grounding does not measure relevance to the question.

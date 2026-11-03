@@ -35,4 +35,3 @@ With the backend running, execute `python evaluation/run.py` from the project ro
 ## Scope
 
 This is a single-user local demo, not a multi-user document service. It has no authentication or tenant isolation. Do not expose the API or use sensitive policy documents in an untrusted environment without adding appropriate access controls, storage protections, and operational safeguards.
-
