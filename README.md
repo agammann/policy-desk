@@ -4,23 +4,24 @@ Ask questions about a small collection of PDF policies and inspect page-level ev
 
 ## Run locally
 
-Requirements: Python 3.10 or newer, Node.js 20.9 or newer, and npm. In one terminal:
+Requirements: Python 3.10 or newer, Node.js 20.9 or newer, and npm. Clone the repository and open a terminal in its root. On Windows PowerShell, start the API with:
 
-```bash
+```powershell
 cd backend
 python -m venv .venv
-# Activate the virtual environment for your shell, then:
-python -m pip install -r requirements.txt
-python -m uvicorn main:app --reload --port 8000
+.\.venv\Scripts\python -m pip install -r requirements.txt
+.\.venv\Scripts\python -m uvicorn main:app --reload --port 8000
 ```
 
-In a second terminal:
+On macOS or Linux, use `.venv/bin/python` in place of `.\.venv\Scripts\python`. In a second terminal, from the repository root, start the interface:
 
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
+
+Alternatively, if you use pnpm, run `pnpm install --frozen-lockfile` and `pnpm dev` in `frontend`.
 
 Open http://localhost:3000. Upload one or more text-based PDFs, ask a question, and select a citation to inspect its source. Three fictional example policies are in `sample_data/`. The library accepts up to 10 PDFs, each up to 20 MB; scanned or encrypted PDFs are not supported. Uploaded PDFs and their index are stored locally under `backend/data/` and are excluded from Git.
 
@@ -31,6 +32,8 @@ The API extracts and chunks text by PDF page. It represents chunks and questions
 ## Evaluate
 
 With the backend running, execute `python evaluation/run.py` from the project root. Review the resulting answer and citation CSVs against the PDFs, then run `python evaluation/run.py --score evaluation/results`. See [evaluation/README.md](evaluation/README.md) for the rubric and corpus controls. The sample benchmark measures answer correctness, citation grounding and citation coverage; its 15 fictional questions are a small demonstration, not a production-quality guarantee.
+
+To run the backend concurrency regression tests, use the virtual environment's Python from the `backend` directory: `python -m unittest discover -s tests -v`.
 
 ## Scope
 

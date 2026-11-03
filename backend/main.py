@@ -91,24 +91,28 @@ def documents():
 @app.post("/api/documents")
 async def upload(files: Annotated[list[UploadFile], File()]):
     errors = []
-    with lock:
-        docs = load()
-        for file in files:
-            name = Path((file.filename or "document.pdf").replace("\\", "/")).name
+    for file in files:
+        name = Path((file.filename or "document.pdf").replace("\\", "/")).name
+        if not name.lower().endswith(".pdf"):
+            errors.append(f"{name}: only PDF files are supported.")
+            continue
+        # Do not await while holding a threading.RLock. Multiple upload
+        # coroutines run on the same event-loop thread and can re-enter it.
+        contents = await file.read(MAX_FILE_BYTES + 1)
+        if len(contents) > MAX_FILE_BYTES:
+            errors.append(f"{name}: file exceeds the 20 MB limit.")
+            continue
+        if not contents.startswith(b"%PDF-"):
+            errors.append(f"{name}: this is not a valid PDF.")
+            continue
+        identifier = hashlib.sha256(contents).hexdigest()[:20]
+        with lock:
+            # Refresh the index inside each transaction so another upload,
+            # deletion, or reset cannot be overwritten with stale state.
+            docs = load()
             if len(docs) >= MAX_DOCUMENTS:
                 errors.append(f"{name}: the library holds at most {MAX_DOCUMENTS} PDFs.")
                 continue
-            if not name.lower().endswith(".pdf"):
-                errors.append(f"{name}: only PDF files are supported.")
-                continue
-            contents = await file.read(MAX_FILE_BYTES + 1)
-            if len(contents) > MAX_FILE_BYTES:
-                errors.append(f"{name}: file exceeds the 20 MB limit.")
-                continue
-            if not contents.startswith(b"%PDF-"):
-                errors.append(f"{name}: this is not a valid PDF.")
-                continue
-            identifier = hashlib.sha256(contents).hexdigest()[:20]
             if any(d["id"] == identifier for d in docs):
                 errors.append(f"{name}: this PDF is already in the library.")
                 continue
@@ -128,7 +132,8 @@ async def upload(files: Annotated[list[UploadFile], File()]):
                 save(docs)
             except Exception as exc:
                 errors.append(f"{name}: could not index PDF ({str(exc)[:160]}).")
-        return {"documents": [public(d) for d in docs], "errors": errors}
+    with lock:
+        return {"documents": [public(d) for d in load()], "errors": errors}
 
 
 @app.delete("/api/documents/{document_id}")
