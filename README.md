@@ -4,14 +4,16 @@ Ask questions about a small collection of PDF policies and inspect page-level ev
 
 ## Run locally
 
-Requirements: Python 3.10 or newer, Node.js 20.9 or newer, and npm. Clone the repository and open a terminal in its root. On Windows PowerShell, start the API with:
+Requirements for the reproducible setup below: Python 3.12.x (tested with 3.12.14), Node.js 20.9 or newer, and npm. Clone the repository and open a terminal in its root. On Windows PowerShell, start the API with:
 
 ```powershell
 cd backend
 python -m venv .venv
-.\.venv\Scripts\python -m pip install -r requirements.txt
+.\.venv\Scripts\python -m pip install -r requirements.lock
 .\.venv\Scripts\python -m uvicorn main:app --reload --port 8000
 ```
+
+The checked-in `requirements.lock` records the complete package resolution tested with Python 3.12.14 on Windows. Install it for the reproducible setup above; `requirements.txt` keeps the allowed direct dependency ranges for intentional refreshes. To refresh, resolve those ranges in a new virtual environment, run the backend tests, then regenerate and review `requirements.lock` with `python -m pip freeze`. Other Python/platform combinations should be checked before replacing the tested resolution.
 
 On macOS or Linux, use `.venv/bin/python` in place of `.\.venv\Scripts\python`. In a second terminal, from the repository root, start the interface:
 
