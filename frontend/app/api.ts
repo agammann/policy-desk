@@ -3,7 +3,7 @@ export type Citation = { id: number; document_id: string; document_name: string;
 export type Answer = { answer: string; citations: Citation[]; mode: "extractive" | "generated" };
 export type DocumentsResponse = { documents: DocumentRecord[]; errors?: (string | { filename?: string; message?: string })[] };
 
-export const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+export const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
 export async function request<T>(path: string, options?: RequestInit): Promise<T> {
   let response: Response;

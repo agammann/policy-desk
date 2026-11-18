@@ -1,31 +1,31 @@
 # Policy Desk
 
-Ask questions about a small collection of PDF policies and inspect page-level evidence. This demo combines a Next.js interface with a FastAPI retrieval service and a 15-question evaluation set.
+Ask questions about a small collection of PDF policies and inspect the passages and pages behind the answers. Policy Desk runs on your computer and includes three fictional policies to try.
 
 ## Run locally
 
-Requirements for the reproducible setup below: Python 3.12.x (tested with 3.12.14), Node.js 20.9 or newer, and npm. Clone the repository and open a terminal in its root. On Windows PowerShell, start the API with:
+Use Python 3.12.x, Node.js 22.13 or newer, and pnpm 11.25.0. The locked setup was tested on Windows with Python 3.12.14 and Node.js 24.19.0. Clone the repository or extract the GitHub source ZIP. Open PowerShell in the project root and start the API.
 
 ```powershell
 cd backend
 python -m venv .venv
 .\.venv\Scripts\python -m pip install -r requirements.lock
-.\.venv\Scripts\python -m uvicorn main:app --reload --port 8000
+.\.venv\Scripts\python -m uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
 The checked-in `requirements.lock` records the complete package resolution tested with Python 3.12.14 on Windows. Install it for the reproducible setup above; `requirements.txt` keeps the allowed direct dependency ranges for intentional refreshes. To refresh, resolve those ranges in a new virtual environment, run the backend tests, then regenerate and review `requirements.lock` with `python -m pip freeze`. Other Python/platform combinations should be checked before replacing the tested resolution.
 
-On macOS or Linux, use `.venv/bin/python` in place of `.\.venv\Scripts\python`. In a second terminal, from the repository root, start the interface:
+On macOS or Linux, use `.venv/bin/python` in place of `.\.venv\Scripts\python`. In a second terminal, from the repository root, install and run the interface using the checked-in frontend lockfile.
 
 ```bash
 cd frontend
-npm install
-npm run dev
+pnpm install --frozen-lockfile
+pnpm dev
 ```
 
-Alternatively, if you use pnpm, run `pnpm install --frozen-lockfile` and `pnpm dev` in `frontend`.
+Open `http://127.0.0.1:3000`. Click **Upload PDFs**, add `sample_data/employee-leave-policy.pdf`, and ask “How many annual leave days do full-time employees receive?” Select a numbered citation to read the excerpt in **Sources**, or use its link to open the PDF at the cited page. `pnpm build` and `pnpm start` run the production build locally with the same backend.
 
-Open http://localhost:3000. Upload one or more text-based PDFs, ask a question, and select a citation to inspect its source. Three fictional example policies are in `sample_data/`. The library accepts up to 10 PDFs, each up to 20 MB; scanned or encrypted PDFs are not supported. Uploaded PDFs and their index are stored locally under `backend/data/` and are excluded from Git.
+The library accepts up to 10 text-based PDFs, each up to 20 MB. Scanned and encrypted PDFs are unsupported. Uploaded PDFs and their index are stored under `backend/data/` and persist across restarts. Set `POLICY_DATA_DIR` before starting the backend to use a separate library. Conversations are kept in the browser page and reset on reload.
 
 ## How it works
 
@@ -39,4 +39,4 @@ To run the backend concurrency regression tests, use the virtual environment's P
 
 ## Scope
 
-This is a single-user local demo, not a multi-user document service. It has no authentication or tenant isolation. Do not expose the API or use sensitive policy documents in an untrusted environment without adding appropriate access controls, storage protections, and operational safeguards.
+Policy Desk is a single-user local application. It has no authentication or tenant isolation. Keep both services on loopback and use fictional or otherwise non-sensitive documents in an untrusted environment.

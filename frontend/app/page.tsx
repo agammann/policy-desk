@@ -33,11 +33,19 @@ export default function Home() {
   const [dragging, setDragging] = useState(false);
   const fileInput = useRef<HTMLInputElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const libraryRevision = useRef(0);
   const displayedMessage = messages[selectedMessage ?? messages.length - 1];
 
   const refresh = useCallback(async () => {
-    try { const data = await request<DocumentsResponse>("/api/documents"); setDocuments(data.documents); setConnected(true); }
-    catch { setConnected(false); }
+    const revision = libraryRevision.current;
+    try {
+      const data = await request<DocumentsResponse>("/api/documents");
+      if (revision !== libraryRevision.current) return;
+      setDocuments(data.documents);
+      setConnected(true);
+    } catch {
+      if (revision === libraryRevision.current) setConnected(false);
+    }
   }, []);
   useEffect(() => { void refresh(); }, [refresh]);
   useEffect(() => { if (messages.length) scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" }); }, [messages]);
@@ -51,6 +59,7 @@ export default function Home() {
     try {
       const form = new FormData(); selected.forEach(file => form.append("files", file));
       const data = await request<DocumentsResponse>("/api/documents", { method: "POST", body: form });
+      libraryRevision.current++;
       setDocuments(data.documents); setConnected(true);
       if (data.errors?.length) setError(data.errors.map(item => typeof item === "string" ? item : `${item.filename || "File"}: ${item.message || "Could not upload"}`).join(" "));
     } catch (err) { setError(err instanceof Error ? err.message : "Upload failed."); }
@@ -59,7 +68,15 @@ export default function Home() {
   async function removeDocument(id: string) {
     if (busy || uploading || removing) return;
     setError(""); setRemoving(true);
-    try { await request(`/api/documents/${encodeURIComponent(id)}`, { method: "DELETE" }); await refresh(); setMessages([]); setSelectedMessage(null); setSelectedCitation(null); }
+    try {
+      const data = await request<DocumentsResponse>(`/api/documents/${encodeURIComponent(id)}`, { method: "DELETE" });
+      libraryRevision.current++;
+      setDocuments(data.documents);
+      setConnected(true);
+      setMessages([]);
+      setSelectedMessage(null);
+      setSelectedCitation(null);
+    }
     catch (err) { setError(err instanceof Error ? err.message : "Could not remove document."); }
     finally { setRemoving(false); }
   }
